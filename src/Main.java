@@ -11,7 +11,7 @@ public class Main {
 
         int mode = 0;
 /// mode = game type easy or hard 1 or 2 ...
-        while(true) {
+        while (true) {
 
             System.out.println("1. Easy - number 1-30 - 20 guesses");
             System.out.println("2. Hard - number 1-60 - 10 guesses");
@@ -46,14 +46,14 @@ public class Main {
                 guess = userInput.nextInt();
                 if (guess > numberToGuess)
                     System.out.println("Too high guess something smaller");
-                // not sure why but if I uncomment the below I get an error
-                        // Error:(56, 17) java: 'else' without 'if'
-        // Surely there is some way to display the number of guesses taken or remaining
+                    // not sure why but if I uncomment the below I get an error
+                    // Error:(56, 17) java: 'else' without 'if'
+                    // Surely there is some way to display the number of guesses taken or remaining
 //                    System.out.println("__");
 //                    System.out.println(numberOfGuesses);
 //                    System.out.println("__");
 //                    System.out.println("your # of guesses left");
-                else if(guess < numberToGuess)
+                else if (guess < numberToGuess)
                     System.out.println("That's too low guess a bigger number");
 //                    System.out.println("__");
 //                    System.out.println(numberOfGuesses);
@@ -67,9 +67,9 @@ public class Main {
 
             if (guess != numberToGuess)
                 System.out.println("So sorry - Better luck next time");
-                System.out.print(numberToGuess);
-                System.out.println("");
-                System.out.println("was the number");
+            System.out.print(numberToGuess);
+            System.out.println("");
+            System.out.println("was the number");
 
             System.out.println("Play again? [ any positive number for yes, any negative number for no .... like 1 or -7]");
             int answer = userInput.nextInt();
